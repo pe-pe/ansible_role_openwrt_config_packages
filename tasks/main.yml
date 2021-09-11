@@ -2,7 +2,7 @@
 # Variables used in tasks:
 # - openwrt_config_packages (list)
 
-- name: openwrt-config | packages | Install packages
+- name: Install packages
   opkg:
     name: "{{ item }}"
     state: present
