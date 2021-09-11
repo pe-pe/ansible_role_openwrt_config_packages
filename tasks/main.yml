@@ -1,0 +1,10 @@
+---
+# Variables used in tasks:
+# - openwrt_config_packages (list)
+
+- name: openwrt-config | packages | Install packages
+  opkg:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ openwrt_config_packages }}"
+  when: openwrt_config_packages is defined

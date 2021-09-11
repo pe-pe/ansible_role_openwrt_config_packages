@@ -1,0 +1,17 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  vars_files:
+    - vars.yml
+
+  roles:
+    - role: gekmihesg.openwrt
+
+  tasks:
+    # packages test
+    - name: Check whether diff from diffutils is reporting version
+      command: "diff --version"
+      register: diff_version_result
+      failed_when: diff_version_result.rc > 0
+      changed_when: false

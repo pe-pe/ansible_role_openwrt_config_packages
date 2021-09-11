@@ -1,0 +1,6 @@
+---
+openwrt_install_recommended_packages: false
+
+openwrt_config_packages:
+  - diffutils
+  - bash  # needed for 'molecule login' for debugging
