@@ -1,7 +1,8 @@
 OpenWRT Config Packages
 =========
 
-[![CI](https://github.com/pe-pe/ansible_role_openwrt_config_packages/workflows/CI/badge.svg)](https://github.com/pe-pe/ansible_role_openwrt_config_packages/actions)
+[![Role](https://img.shields.io/ansible/role/56214.svg)](https://galaxy.ansible.com/pe_pe/openwrt_config_packages/)
+[![Quality](https://img.shields.io/ansible/quality/56214.svg)](https://galaxy.ansible.com/pe_pe/openwrt_config_packages/)[![CI](https://github.com/pe-pe/ansible_role_openwrt_config_packages/workflows/CI/badge.svg)](https://github.com/pe-pe/ansible_role_openwrt_config_packages/actions)
 
 Ansible role that installs packages on OpenWRT device.
 
